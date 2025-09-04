@@ -1,4 +1,4 @@
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
 @source "./**/*.{ts,tsx,js,jsx}";
 
@@ -9,13 +9,13 @@
   --color-divider: #e6e6e6;
   --color-value: #f5f5f5;
   --color-icon: #d9d9d9;
-  --color-primary: #007aff;
+  --color-primary: #18a0fb;
+  --color-hover: #f0f0f0;
 
   --font-size-h1: 16px;
   --font-size-h2: 12px;
 }
 
-/* 기본 리셋/베이스 */
 @layer utilities {
   .text-label {
     color: var(--color-label);
@@ -37,5 +37,8 @@
   .text-h2 {
     font-size: var(--font-size-h2);
     line-height: 1;
+  }
+  .text-white {
+    color: #ffffff;
   }
 }

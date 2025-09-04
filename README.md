@@ -70,15 +70,15 @@ export function IconButton({ hasIcon, className, children, ...props }) {
 - Title
 - Value
 
-## Storybook
-
-TBD
-
 ## Dependencies
 
 - react (peer: >=18)
 - Tailwind v4 (internal build)
 - typescript
+
+## Storybook
+
+see https://68b8f0344b12034447d665ca-wmtnoqzrxm.chromatic.com
 
 ## Documentation
 

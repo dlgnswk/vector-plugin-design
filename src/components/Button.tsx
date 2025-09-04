@@ -1,5 +1,5 @@
 import * as React from "react";
-import { cn } from "src/util";
+import { cn } from "../util";
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: "primary" | "icon";
@@ -11,12 +11,12 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   ...props
 }) => {
-  const baseClass =
-    "w-full h-[28px] rounded-[5px] text-h2 ring-inset ring-1 ring-select";
+  const baseClass = " h-[28px] rounded-[5px]";
 
   const variantClass = cn(
-    variant === "primary" && "bg-primary text-white",
-    variant === "icon" && "bg-transparent text-label"
+    variant === "primary" &&
+      "w-full bg-primary text-white px-4 text-h2 font-bold",
+    variant === "icon" && "bg-transparent text-label hover:bg-hover w-[28px]"
   );
 
   return (

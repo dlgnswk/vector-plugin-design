@@ -1,5 +1,8 @@
 # `Vector Plugin` design system
 
+![npm](https://img.shields.io/npm/v/vector-plugin-design?label=npm)
+![license](https://img.shields.io/npm/l/vector-plugin-design)
+
 Figma 플러그인 `Vector Plugin` 에서 사용되는 디자인 시스템 라이브러리입니다.
 
 ## Install

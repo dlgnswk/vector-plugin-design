@@ -1,6 +1,6 @@
 {
   "name": "vector-plugin-design",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Design system for Vector plugin",
   "private": false,
   "repository": {
@@ -54,6 +54,7 @@
     "dev:css": "tailwindcss -i src/styles.css -o dist/styles.css -w",
     "storybook": "tailwindcss -i src/styles.css -o dist/styles.css -w & storybook dev -p 6006",
     "storybook:build": "tailwindcss -i src/styles.css -o dist/styles.css && storybook build -o storybook-static",
+    "prepublishOnly": "npm run build",
     "chromatic": "npx chromatic --project-token=chpt_93ba6deb6ec210b --storybook-build-dir=storybook-static"
   },
   "peerDependencies": {

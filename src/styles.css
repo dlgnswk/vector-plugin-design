@@ -29,6 +29,9 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
+  .bg-hover {
+    background-color: var(--color-hover);
+  }
 
   .text-h1 {
     font-size: var(--font-size-h1);
@@ -41,7 +44,7 @@
   .text-white {
     color: #ffffff;
   }
-  .cursor-pointer {
-    cursor: pointer !important;
+  button.cursor-pointer {
+    cursor: pointer;
   }
 }

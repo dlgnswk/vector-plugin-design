@@ -1,6 +1,6 @@
 {
   "name": "vector-plugin-design",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Design system for Vector plugin",
   "private": false,
   "repository": {
@@ -58,8 +58,8 @@
     "chromatic": "npx chromatic --project-token=chpt_93ba6deb6ec210b --storybook-build-dir=storybook-static"
   },
   "peerDependencies": {
-    "react": ">=18",
-    "react-dom": ">=18"
+    "react": ">=17",
+    "react-dom": ">=17"
   },
   "packageManager": "npm@11.1.0",
   "devDependencies": {

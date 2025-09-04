@@ -18,33 +18,35 @@
 
 @layer utilities {
   .text-label {
-    color: var(--color-label);
+    color: var(--color-label) !important;
   }
   .text-title {
-    color: var(--color-title);
+    color: var(--color-title) !important;
   }
   .ring-select {
-    --tw-ring-color: var(--color-select);
+    --tw-ring-color: var(--color-select) !important;
   }
   .bg-primary {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary) !important;
   }
   .bg-hover {
-    background-color: var(--color-hover);
+    background-color: var(--color-hover) !important;
   }
-
   .text-h1 {
-    font-size: var(--font-size-h1);
-    line-height: 1;
+    font-size: var(--font-size-h1) !important;
+    line-height: 1 !important;
   }
   .text-h2 {
-    font-size: var(--font-size-h2);
-    line-height: 1;
+    font-size: var(--font-size-h2) !important;
+    line-height: 1 !important;
   }
   .text-white {
-    color: #ffffff;
+    color: #ffffff !important;
+  }
+  .hover\:bg-hover:hover {
+    background-color: var(--color-hover) !important;
   }
   button.cursor-pointer {
-    cursor: pointer;
+    cursor: pointer !important;
   }
 }

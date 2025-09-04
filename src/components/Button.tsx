@@ -11,16 +11,18 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   ...props
 }) => {
-  const baseClass = " h-[28px] rounded-[5px]";
-
-  const variantClass = cn(
-    variant === "primary" &&
-      "w-full bg-primary text-white px-4 text-h2 font-bold",
-    variant === "icon" && "bg-transparent text-label hover:bg-hover w-[28px]"
-  );
-
   return (
-    <button className={`${baseClass} ${variantClass} ${className}`} {...props}>
+    <button
+      className={cn(
+        "h-[28px] rounded-[5px] flex items-center justify-center cursor-pointer",
+        variant === "primary" &&
+          "w-full bg-primary text-white px-4 text-h2 font-bold",
+        variant === "icon" &&
+          "bg-transparent text-label hover:bg-hover w-[28px]",
+        className
+      )}
+      {...props}
+    >
       {children}
     </button>
   );

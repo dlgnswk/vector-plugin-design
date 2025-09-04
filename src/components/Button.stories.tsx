@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./Button";
+import { LocateFixed } from "lucide-react";
 
 const meta: Meta<typeof Button> = {
   title: "UI/Button",
@@ -22,6 +23,6 @@ export const Primary: Story = {
 export const Icon: Story = {
   args: {
     variant: "icon",
-    children: "★",
+    children: <LocateFixed size={12} />,
   },
 };

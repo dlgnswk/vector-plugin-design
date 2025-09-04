@@ -61,18 +61,18 @@
     "react": ">=18",
     "react-dom": ">=18"
   },
-  "packageManager": "npm@10",
+  "packageManager": "npm@11.1.0",
   "devDependencies": {
+    "@storybook/addon-essentials": "^8.2.0",
+    "@storybook/react-vite": "^8.2.0",
     "@tailwindcss/cli": "^4.1.12",
     "@tailwindcss/postcss": "^4.1.12",
     "@types/react": "^19.1.12",
     "autoprefixer": "^10.4.21",
-    "storybook": "^8.2.0",
-    "@storybook/react-vite": "^8.2.0",
-    "@storybook/addon-essentials": "^8.2.0",
     "postcss": "^8.5.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "storybook": "^8.2.0",
     "tailwindcss": "^4.1.12",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"

@@ -17,7 +17,7 @@ export const Button: React.FC<ButtonProps> = ({
         "h-[28px] rounded-[5px] flex items-center justify-center cursor-pointer",
         variant === "primary" &&
           "w-full bg-primary text-white px-4 text-h2 font-bold",
-        variant === "icon" && "bg-hover text-label hover:bg-hover w-[28px]",
+        variant === "icon" && "text-label hover:bg-hover w-[28px]",
         className
       )}
       {...props}

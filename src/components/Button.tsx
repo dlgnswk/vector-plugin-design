@@ -14,7 +14,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className={cn(
-        "h-[28px] rounded-[5px] flex items-center justify-center cursor-pointer",
+        "vector-design h-[28px] rounded-[5px] flex items-center justify-center cursor-pointer",
         variant === "primary" &&
           "w-full bg-primary text-white px-4 text-h2 font-bold",
         variant === "icon" && "text-label hover:bg-hover w-[28px]",

@@ -63,11 +63,9 @@ export function IconButton({ hasIcon, className, children, ...props }) {
 
 ### Upcoming
 
-- Container
 - Divider
 - Input
 - Item
-- ItemContainer
 - Label
 - Select
 - Title

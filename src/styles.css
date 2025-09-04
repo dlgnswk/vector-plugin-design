@@ -47,10 +47,8 @@
     background-color: var(--color-hover) !important;
   }
   button {
-    background-color: unset !important;
-  }
-  button:hover {
-    background-color: unset !important;
+    background-color: initial !important;
+    opacity: initial !important;
   }
   button.cursor-pointer {
     cursor: pointer !important;

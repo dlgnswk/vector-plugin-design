@@ -1,6 +1,6 @@
 {
   "name": "vector-plugin-design",
-  "version": "0.1.13",
+  "version": "0.2.0",
   "description": "Design system for Vector plugin",
   "private": false,
   "repository": {
@@ -48,7 +48,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build:ts": "tsup src/index.ts src/ui.ts src/util.ts --format esm,cjs --dts --sourcemap --out-dir dist --external react,react-dom",
-    "build:css": "tailwindcss -i src/styles.css -o dist/styles.css",
+    "build:css": "tailwindcss -i src/styles.css -o dist/styles.css --minify",
     "build": "npm run clean && npm run build:ts && npm run build:css",
     "dev:ts": "tsup src/index.ts --format esm,cjs --dts --sourcemap --out-dir dist --watch --external react,react-dom",
     "dev:css": "tailwindcss -i src/styles.css -o dist/styles.css -w",
@@ -65,15 +65,13 @@
   "devDependencies": {
     "@storybook/addon-essentials": "^8.2.0",
     "@storybook/react-vite": "^8.2.0",
-    "@tailwindcss/cli": "^4.1.12",
-    "@tailwindcss/postcss": "^4.1.12",
     "@types/react": "^19.1.12",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "storybook": "^8.2.0",
-    "tailwindcss": "^4.1.12",
+    "tailwindcss": "^3.4.0",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"
   },

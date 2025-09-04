@@ -1,0 +1,64 @@
+{
+  "name": "vector-plugin-design",
+  "version": "0.1.0",
+  "description": "Design system for Vector plugin",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dlgnswk/vector-plugin-design.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dlsnswk/vector-plugin-design/issues"
+  },
+  "keywords": [
+    "figma",
+    "figma-plugin",
+    "component",
+    "design-system"
+  ],
+  "author": "dlgnswk",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "browser": "./dist/index.mjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:ts": "tsup src/index.ts --format esm,cjs --dts --sourcemap --out-dir dist --external react,react-dom",
+    "build:css": "tailwindcss -i src/styles.css -o dist/styles.css",
+    "build": "npm run clean && npm run build:ts && npm run build:css",
+    "dev:ts": "tsup src/index.ts --format esm,cjs --dts --sourcemap --out-dir dist --watch --external react,react-dom",
+    "dev:css": "tailwindcss -i src/styles.css -o dist/styles.css -w"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "packageManager": "npm@10",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "@tailwindcss/postcss": "^4.1.12",
+    "@types/react": "^19.1.12",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.12",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}

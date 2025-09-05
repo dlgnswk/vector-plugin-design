@@ -28,7 +28,7 @@ import "vector-plugin-design/styles.css";
 정의된 컴포넌트를 임포트해 사용할 수 있습니다.
 
 ```tsx
-import { Button } from "vector-plugin-design/ui";
+import { Button } from "vector-plugin-design";
 
 export default function Example() {
   return <Button>Click me</Button>;
@@ -40,7 +40,7 @@ export default function Example() {
 `cn` 유틸함수를 임포트해 조건부/추가 클래스를 쉽게 합칠 수 있습니다.
 
 ```tsx
-import { Button } from "vector-plugin-design/ui";
+import { Button } from "vector-plugin-design";
 import { cn } from "vector-plugin-design/util";
 
 export function IconButton({ hasIcon, className, children, ...props }) {
@@ -60,9 +60,6 @@ export function IconButton({ hasIcon, className, children, ...props }) {
 ### Available
 
 - Button
-
-### Upcoming
-
 - Divider
 - Input
 - Item
@@ -74,7 +71,7 @@ export function IconButton({ hasIcon, className, children, ...props }) {
 ## Dependencies
 
 - react (peer: >=18)
-- Tailwind v4 (internal build)
+- Tailwind v3 (internal build)
 - typescript
 
 ## Storybook

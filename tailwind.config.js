@@ -15,6 +15,10 @@ module.exports = {
         primary: "#18a0fb",
         hover: "#f0f0f0",
       },
+      ringColor: {
+        select: "#e5e5e5",
+        primary: "#18a0fb",
+      },
       fontSize: {
         h1: "16px",
         h2: "12px",

@@ -1,14 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  important: '.vector-design',
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  important: ".vector-design",
+  prefix: "vd-",
   theme: {
     extend: {
       colors: {
         label: "#8c8c8c",
-        title: "#404040", 
+        title: "#404040",
         select: "#e5e5e5",
         divider: "#e6e6e6",
         value: "#f5f5f5",
@@ -18,9 +17,9 @@ module.exports = {
       },
       fontSize: {
         h1: "16px",
-        h2: "12px", 
-      }
+        h2: "12px",
+      },
     },
   },
   plugins: [],
-}
+};

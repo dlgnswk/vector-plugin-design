@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  important: ".vector-design",
+  important: true,
   prefix: "vd-",
   theme: {
     extend: {

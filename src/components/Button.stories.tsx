@@ -5,6 +5,9 @@ import { LocateFixed } from "lucide-react";
 const meta: Meta<typeof Button> = {
   title: "UI/Button",
   component: Button,
+  parameters: {
+    layout: "centered",
+  },
   args: {
     children: "Click me",
   },

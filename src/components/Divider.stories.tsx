@@ -5,7 +5,7 @@ const meta: Meta<typeof Divider> = {
   title: "UI/Divider",
   component: Divider,
   parameters: {
-    layout: "padded",
+    layout: "centered",
   },
 };
 

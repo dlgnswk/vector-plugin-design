@@ -7,7 +7,7 @@ interface ItemProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
 
-export const Item = ({ children, type, className }: ItemProps) => {
+export const Item = ({ children, type, className, ...props }: ItemProps) => {
   return (
     <div
       className={cn(
@@ -16,6 +16,7 @@ export const Item = ({ children, type, className }: ItemProps) => {
         type === "multi" && "vd-px-0",
         className
       )}
+      {...props}
     >
       {children}
     </div>

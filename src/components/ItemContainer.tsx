@@ -11,6 +11,7 @@ export const ItemContainer = ({
   children,
   type,
   className,
+  ...props
 }: ItemContainerProps) => {
   return (
     <div
@@ -20,6 +21,7 @@ export const ItemContainer = ({
         type === "row" && "vd-flex-row vd-gap-2 vd-px-4 vd-py-[5px]",
         className
       )}
+      {...props}
     >
       {children}
     </div>

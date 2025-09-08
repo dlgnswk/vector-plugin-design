@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "../util";
 
-interface ItemContainerProps {
+interface ItemContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   type: "col" | "row";
   className?: string;

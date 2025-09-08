@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "../util";
 
-interface ItemProps {
+interface ItemProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   type: "single" | "multi";
   className?: string;

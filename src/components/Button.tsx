@@ -18,6 +18,7 @@ export const Button: React.FC<ButtonProps> = ({
         variant === "primary" &&
           "vd-w-full vd-bg-primary vd-text-white vd-px-4 vd-text-h2 vd-font-bold",
         variant === "icon" && "vd-text-label hover:vd-bg-hover vd-w-[28px]",
+        props.disabled && "vd-opacity-50 !vd-cursor-not-allowed",
         className
       )}
       {...props}

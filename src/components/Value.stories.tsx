@@ -26,15 +26,17 @@ export default meta;
 type Story = StoryObj<typeof Value>;
 
 export const Default: Story = {
-  args: { icon: undefined, value: "Value" },
-  render: ({ icon, value }) => <Value icon={icon} value={value} />,
+  args: { icon: undefined, value: "Value", disabled: false },
+  render: ({ icon, value, disabled }) => (
+    <Value icon={icon} value={value} disabled={disabled} />
+  ),
 };
 
 export const WithIcon: Story = {
-  args: { icon: "X", value: "Value" },
-  render: ({ icon, value }) => (
+  args: { icon: "X", value: "Value", disabled: true },
+  render: ({ icon, value, disabled }) => (
     <div className="vd-flex vd-flex-col vd-justify-center vd-w-full vd-gap-[3px]">
-      <Value icon={icon} value={value} />
+      <Value icon={icon} value={value} disabled={disabled} />
     </div>
   ),
 };

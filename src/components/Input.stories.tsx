@@ -15,20 +15,27 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => {
+  args: {
+    disabled: false,
+  },
+  render: (args) => {
     const [value, setValue] = useState("");
     return (
       <Input
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Enter text..."
+        {...args}
       />
     );
   },
 };
 
 export const WithIcon: Story = {
-  render: () => {
+  args: {
+    disabled: false,
+  },
+  render: (args) => {
     const [value, setValue] = useState("");
     return (
       <Input
@@ -36,6 +43,7 @@ export const WithIcon: Story = {
         onChange={(e) => setValue(e.target.value)}
         placeholder="Search..."
         icon={<Search size={12} />}
+        {...args}
       />
     );
   },

@@ -20,6 +20,7 @@ type Story = StoryObj<typeof Button>;
 export const Primary: Story = {
   args: {
     variant: "primary",
+    disabled: false,
   },
 };
 
@@ -27,5 +28,6 @@ export const Icon: Story = {
   args: {
     variant: "icon",
     children: <LocateFixed size={12} />,
+    disabled: false,
   },
 };

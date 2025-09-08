@@ -3,10 +3,16 @@ import { cn } from "../util";
 interface ValueProps {
   icon?: string;
   value: string;
+  disabled?: boolean;
   className?: string;
 }
 
-export const Value = ({ icon, value, className }: ValueProps) => {
+export const Value = ({
+  icon,
+  value,
+  disabled = false,
+  className,
+}: ValueProps) => {
   return (
     <div
       className={cn(
@@ -20,7 +26,9 @@ export const Value = ({ icon, value, className }: ValueProps) => {
           {icon}
         </div>
       )}
-      <div className="vd-text-xs">{value}</div>
+      <div className={cn("vd-text-xs", disabled && "!vd-text-label")}>
+        {value}
+      </div>
     </div>
   );
 };

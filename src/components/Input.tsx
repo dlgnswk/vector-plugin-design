@@ -20,7 +20,9 @@ export const Input = ({ value, icon, onChange, ...props }: InputProps) => {
         className={`vd-w-full vd-h-[28px] vd-rounded-[5px] !vd-text-xs vd-ring-1 vd-ring-inset vd-ring-select
           ${
             hasIcon ? "vd-pr-2 vd-pl-[28px]" : "vd-px-2"
-          } placeholder:vd-text-label focus:vd-outline-none focus:vd-ring-1 focus:vd-ring-primary focus:vd-ring-inset`}
+          } placeholder:vd-text-label focus:vd-outline-none focus:vd-ring-1 focus:vd-ring-primary focus:vd-ring-inset ${
+          props.disabled && "!vd-cursor-not-allowed !vd-text-label"
+        }`}
         value={value}
         onChange={onChange}
         {...props}

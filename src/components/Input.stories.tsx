@@ -48,3 +48,21 @@ export const WithIcon: Story = {
     );
   },
 };
+
+export const Disabled: Story = {
+  args: {
+    disabled: true,
+  },
+  render: (args) => {
+    const [value, setValue] = useState("");
+    return (
+      <Input
+        value={value}
+        disabled
+        placeholder="Search..."
+        onChange={(e) => setValue(e.target.value)}
+        {...args}
+      />
+    );
+  },
+};

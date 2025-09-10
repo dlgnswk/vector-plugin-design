@@ -102,7 +102,7 @@ export const Select = ({
       {open && (
         <ul
           role="listbox"
-          className="vd-absolute vd-z-10 vd-left-0 vd-right-0 vd-mt-1 vd-max-h-48 vd-overflow-auto vd-box-border vd-bg-white vd-border vd-border-1 vd-border-select vd-rounded-[5px] vd-shadow-sm"
+          className="vd-absolute vd-z-10 vd-left-0 vd-right-0 vd-mt-1 vd-max-h-48 vd-overflow-auto vd-box-border vd-bg-white vd-border vd-border-1 vd-border-select vd-rounded-[5px] vd-shadow-sm vd-overflow-y-auto"
         >
           {options.map((opt, idx) => {
             const selected = opt.value === value;

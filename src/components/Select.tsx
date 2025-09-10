@@ -10,6 +10,7 @@ interface SelectProps {
   options: Option[];
   placeholder?: string;
   className?: string;
+  disabled?: boolean;
 }
 
 export const Select = ({
@@ -18,6 +19,7 @@ export const Select = ({
   options,
   placeholder,
   className = "",
+  disabled = false,
 }: SelectProps) => {
   const [open, setOpen] = React.useState(false);
   const [highlight, setHighlight] = React.useState<number>(-1);
@@ -28,13 +30,17 @@ export const Select = ({
   React.useEffect(() => {
     const onDown = (e: MouseEvent) => {
       if (!ref.current) return;
-      if (!ref.current.contains(e.target as Node)) setOpen(false);
+      if (!ref.current.contains(e.target as Node)) {
+        if (!disabled) setOpen(false);
+      }
     };
     document.addEventListener("mousedown", onDown);
     return () => document.removeEventListener("mousedown", onDown);
   }, []);
 
   const onKeyDown = (e: React.KeyboardEvent) => {
+    if (disabled) return;
+
     if (
       !open &&
       (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ")
@@ -73,7 +79,8 @@ export const Select = ({
         type="button"
         aria-haspopup="listbox"
         aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
+        disabled={disabled}
+        onClick={() => !disabled && setOpen((v) => !v)}
         className="vd-flex vd-w-full vd-h-[28px] vd-box-border vd-border vd-border-1 vd-border-select vd-rounded-[5px] vd-text-xs vd-items-center vd-justify-between vd-bg-white focus:vd-outline-none focus:vd-border-primary"
       >
         <span

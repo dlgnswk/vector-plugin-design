@@ -65,3 +65,18 @@ export const ManyOptions: Story = {
     );
   },
 };
+
+export const Disabled: Story = {
+  render: () => {
+    const [value, setValue] = useState("");
+    return (
+      <Select
+        value={value}
+        onChange={setValue}
+        options={options}
+        placeholder="Select an option..."
+        disabled
+      />
+    );
+  },
+};

@@ -7,3 +7,4 @@ export * from "./components/Label";
 export * from "./components/Select";
 export * from "./components/Title";
 export * from "./components/Value";
+export * from "./components/Textarea";

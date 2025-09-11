@@ -31,3 +31,20 @@ export const Icon: Story = {
     disabled: false,
   },
 };
+
+export const Secondary: Story = {
+  args: {
+    variant: "secondary",
+    children: "Secondary",
+    disabled: false,
+  },
+};
+
+export const Pending: Story = {
+  args: {
+    variant: "primary",
+    children: "Pending...",
+    disabled: false,
+    isPending: true,
+  },
+};

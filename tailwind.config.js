@@ -14,6 +14,7 @@ module.exports = {
         icon: "#d9d9d9",
         primary: "#18a0fb",
         hover: "#f0f0f0",
+        warning: "#fc2942",
       },
       ringColor: {
         select: "#e5e5e5",

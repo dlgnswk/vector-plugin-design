@@ -24,18 +24,26 @@ export const Primary: Story = {
   },
 };
 
-export const Icon: Story = {
-  args: {
-    variant: "icon",
-    children: <LocateFixed size={12} />,
-    disabled: false,
-  },
-};
-
 export const Secondary: Story = {
   args: {
     variant: "secondary",
     children: "Secondary",
+    disabled: false,
+  },
+};
+
+export const Warning: Story = {
+  args: {
+    variant: "warning",
+    children: "Warning",
+    disabled: false,
+  },
+};
+
+export const Icon: Story = {
+  args: {
+    variant: "icon",
+    children: <LocateFixed size={12} />,
     disabled: false,
   },
 };
